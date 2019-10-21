@@ -1,0 +1,175 @@
+GP = 'GothamPro', sans-serif
+GPBk = 'GothamProBlack', sans-serif
+GPBl = 'GothamProBold', sans-serif
+GPm = 'GothamProMedium', sans-serif
+myG = #00FFE0
+
+@font-face {
+	font-family: 'GothamPro';
+	src: url('../fonts/GothamPro.eot');
+	src: url('../fonts/GothamPro.eot') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff2') format('woff2'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype'),
+		url('../fonts/GothamPro.svg#GothamPro') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamProBlack';
+	src: url('../fonts/GothamProBlack.eot');
+	src: url('../fonts/GothamProBlack.eot') format('embedded-opentype'),
+		url('../fonts/GothamProBlack.woff2') format('woff2'),
+		url('../fonts/GothamProBlack.woff') format('woff'),
+		url('../fonts/GothamProBlack.ttf') format('truetype'),
+		url('../fonts/GothamProBlack.svg#GothamProBlack') format('svg');
+	font-display: fallback;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamProBold';
+	src: url('../fonts/GothamProBold.eot');
+	src: url('../fonts/GothamProBold.eot') format('embedded-opentype'),
+		url('../fonts/GothamProBold.woff2') format('woff2'),
+		url('../fonts/GothamProBold.woff') format('woff'),
+		url('../fonts/GothamProBold.ttf') format('truetype'),
+		url('../fonts/GothamProBold.svg#GothamProBold') format('svg');
+	font-display: fallback;
+	font-weight: bold
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamProMedium';
+	src: url('../fonts/GothamProMedium.eot');
+	src: url('../fonts/GothamProMedium.eot') format('embedded-opentype'),
+		url('../fonts/GothamProMedium.woff2') format('woff2'),
+		url('../fonts/GothamProMedium.woff') format('woff'),
+		url('../fonts/GothamProMedium.ttf') format('truetype'),
+		url('../fonts/GothamProMedium.svg#GothamProMedium') format('svg');
+	font-display: fallback;
+	font-weight: 600;
+	font-style: normal;
+}
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 16px
+	font-family: GP
+	background-color: #070B21
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.general-title
+	font-family: GPm 
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 20px rgba(114, 238, 255, 0.3);
+	margin-bottom: 50px
+.button
+	display block
+	margin 0 auto
+	width 100%
+	max-width: 430px;
+	height: auto
+	background-image: linear-gradient(180deg, #00FFE0 0%, #00C2FF 100%);
+	box-shadow: 0px 4px 20px rgba(114, 238, 255, 0.3);
+	// border-radius: 40px;
+	padding 10px
+	font-size: 18px;
+	font-family: GPm
+	color #002824
+	text-decoration: none
+	border: 1px solid rgba(0, 254, 225, 0.5);
+	border-radius: 60px;
+	background-clip: content-box;
+	span
+		background-image url(../img/icons/presentation.png)
+		background-repeat no-repeat
+		background-position: left 49px center
+		padding 19px 43px 20px 110px
+		// width 100%
+		display block
+	&:focus
+		text-decoration: none
+		color #002824
+	&:hover
+		text-decoration: none
+		color #002824
+		background-image: linear-gradient(0deg, #00FFE0 0%, #00C2FF 100%);
+
+@import 'main/0.header'
+@import 'main/1.main'
+@import 'main/2.about'
+@import 'main/3.what'
+@import 'main/4.methods'
+@import 'main/5.about-course'
+@import 'main/6.for'
+@import 'main/7.get'
+@import 'main/8.plan'
+@import 'main/9.earns'
+@import 'main/10.mail-section'
+@import 'main/11.authors'
+@import 'main/12.fackts'
+@import 'main/13.know'
+@import 'main/14.plan-2'
+@import 'main/15.matherial'
+@import 'main/16.revs'
+@import 'main/17.bonuses'
+@import 'main/18.last'
+@import 'main/19.footer'
+@import 'main/19.footer'
+@import 'main/20.modal'
+@import 'main/21.politics'
+@import 'main/22.medias'
