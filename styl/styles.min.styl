@@ -53,6 +53,8 @@ myG = #00FFE0
 	font-style: normal;
 }
 
+@import '../css/_css/bootstrap.min.css'
+	
 *
 	margin 0
 	padding 0
@@ -61,6 +63,8 @@ body
 	font-size: 16px
 	font-family: GP
 	background-color: #070B21
+	letter-spacing: 0.02em;
+	color #fff
 a
 	color: #fefefe
 	&:focus
@@ -125,7 +129,7 @@ footer
 	height: auto
 	background-image: linear-gradient(180deg, #00FFE0 0%, #00C2FF 100%);
 	box-shadow: 0px 4px 20px rgba(114, 238, 255, 0.3);
-	// border-radius: 40px;
+	text-align: left
 	padding 10px
 	font-size: 18px;
 	font-family: GPm
@@ -137,8 +141,8 @@ footer
 	span
 		background-image url(../img/icons/presentation.png)
 		background-repeat no-repeat
-		background-position: left 49px center
-		padding 19px 43px 20px 110px
+		background-position: left 30px center
+		padding 19px 20px 20px 90px
 		// width 100%
 		display block
 	&:focus
@@ -148,7 +152,13 @@ footer
 		text-decoration: none
 		color #002824
 		background-image: linear-gradient(0deg, #00FFE0 0%, #00C2FF 100%);
-
+.general-text
+	margin-bottom: 30px
+	color: #D9F6FF;
+	line-height: 24px;
+	text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+	&:last-of-type
+		margin-bottom: 0
 @import 'main/0.header'
 @import 'main/1.main'
 @import 'main/2.about'
