@@ -1,0 +1,15 @@
+section#feedback
+	.container
+		h3.general-title.general-title-light
+			span.span-main
+			| Ваши вопросы к Анне и Веронике пишите 
+			span.span-green в формах ниже:
+		.row
+			.col-md-6.col-sm-6
+				#vk
+					#vk_comments
+						script(type="text/javascript")
+							| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+			.col-md-6.col-sm-6
+				#fb
+					.fb-comments(data-href= head_url data-width="100%" data-numposts="15" data-order-by="reverse_time")

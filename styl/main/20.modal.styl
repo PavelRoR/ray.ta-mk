@@ -1,0 +1,129 @@
+.modal-backdrop.in
+	opacity .8
+	background-color: #070B21
+.mail-modal-content
+	background-color: #030619;
+	background-image url(../img/backgrounds/mail-section-bg.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	border: 2px solid myG
+.modal-text
+	font-size: 24px
+	width 84%
+	text-align: center
+	margin 0 auto 15px
+button.close
+	position absolute
+	width: 35px
+	height 35px
+	border-radius: 50px
+	line-height: 30px
+	text-align: center
+	font-size: 24px
+	color: #000
+	background-color: #F0F0F0
+	top 10px
+	right 10px
+	left auto
+	z-index 99
+	opacity 1
+	transition: all .1s ease-in-out
+	&:hover
+		color: #F0F0F0
+		background-color: #000
+.input-mail-modal
+	display block
+	margin 30px auto 10px
+.alert-message {
+	clear both
+	display: none;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+	text-align: center
+}
+.checking {
+	display: table;
+	width 100%
+	max-width 430px
+	margin: 10px auto 0
+	text-align: left
+}
+
+.checking .check-label {
+	line-height: 20px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 45px;
+	text-align: left;
+	font-size: 14px
+}
+
+.checking .check-label a
+	text-decoration: underline
+	display: inline
+	color #fff
+	&:focus
+		text-decoration: underline
+		color #fff
+	&:hover
+		text-decoration: none
+		color #fff
+
+.checking .check-label:before {
+	content: '';
+	background-color: red
+	position: absolute;
+	left: 0;
+	top: 3px;
+	width: 31px;
+	height: 31px;
+	border 1px solid myG
+	border-radius: 3px
+}
+
+.checking .check-label:after {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: -10px;
+	width: 11px;
+	height: 18px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 4px solid #fff
+	border-right: 4px solid #fff
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check-label:before {
+	background-color: transparent
+
+}
+
+.check:checked + .check-label:after {
+	opacity: 1;
+	top: 7px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}

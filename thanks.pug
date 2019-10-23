@@ -1,0 +1,42 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/transpersonal-analytics/thanks/';
+-var head_title = 'Спасибо за регистрацию на онлайн-мастер-класс';
+-var styles = '../css/thanks.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+mixin gt(cl,h3)
+	h3.general-title(class= cl)= h3
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		section#main
+			.container
+				h2.main-title-thanks Обязательно приходите на онлайн-мастер-класс 
+					span.switch-date
+				br
+				p.thanks-text Регистрируйтесь в удобный для вас мессенджер, чтобы получить бонус 
+					span «Ритуал на деньги», 
+					| оставаться на связи и не пропустить мастер-класс
+				.bots
+					a.bots-link.bots-link-vk(href="https://bot.mastervision.su/bot/public/link?type=article&soc=vk&id=30", target="_blank")
+						i.fa.fa-vk(aria-hidden="true")
+						| Вконтакте
+					a.bots-link.bots-link-tg(href="https://bot.mastervision.su/bot/public/tg/tg_url/a30", target="_blank")
+						i.fa.fa-telegram(aria-hidden="true")
+						| Telegram
+					a.bots-link.bots-link-wa(href="https://api.whatsapp.com/send?phone=79150797851&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C", target="_blank")
+						i.fa.fa-whatsapp(aria-hidden="true")
+						| WhatsApp
+					a.bots-link.bots-link-ok(href="https://ok.ru/group/55041781530771/messages", target="_blank")
+						i.fa.fa-odnoklassniki(aria-hidden="true")
+						| Одноклассники
+		include pug/bonus/3.footer.pug
+		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+		script(src="../js/thanks.min.js")
+		include pug/scripts/body_bottom_scripts
