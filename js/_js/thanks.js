@@ -90,7 +90,7 @@ $(document).ready(function () {
                 setTimeout(function () {
                     button.html('<span>Отправлено!</span>');
                 }, 500);
-                return false
+                return true
             }
         });
         email.click(function () {
