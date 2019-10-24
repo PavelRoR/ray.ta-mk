@@ -19,4 +19,6 @@ html(lang="ru")
 						i.fa.fa-external-link(aria-hidden="true")
 				h2.main-subtitle.remind-main-subtitle Скорее проверьте почту, вас ждут домашние задания!
 		include pug/bonus/3.footer.pug
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/bonus-ie.min.css";head.appendChild(link);}
 		include pug/scripts/body_bottom_scripts

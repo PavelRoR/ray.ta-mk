@@ -3,6 +3,16 @@
 //@prepros-prepend lazy.min.js
 //@prepros-prepend jquery.fancybox.min.js
 
+var isIE = false || !!document.documentMode;
+
+if (isIE) {
+    var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "css/ie.min.css";
+    head.appendChild(link);
+}
+
 $(document).ready(function () {
     $(function () {
         var check = $('.check', this),

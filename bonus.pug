@@ -17,4 +17,6 @@ html(lang="ru")
 		include pug/bonus/1.main.pug
 		include pug/bonus/2.feedback.pug
 		include pug/bonus/3.footer.pug
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/bonus-ie.min.css";head.appendChild(link);}
 		include pug/scripts/body_bottom_scripts
