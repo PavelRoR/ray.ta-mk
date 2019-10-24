@@ -1,5 +1,5 @@
 -var head_url = 'https://roleva-yurina.mastervision.su/transpersonal-analytics/thanks/';
--var head_title = 'Спасибо за регистрацию на онлайн-мастер-класс';
+-var head_title = 'Скачайте Чек-лист';
 -var styles = '../css/thanks.min.css';
 -var fav_ico = '../favicon.ico'
 -var fav_png = '../favicon.png'
@@ -14,15 +14,13 @@ html(lang="ru")
 		include pug/scripts/head_fb_scripts
 	body
 		include pug/scripts/body_top_fb_scripts
-		include pug/header
 		section#main
 			.container
-				h2.main-title-thanks Обязательно приходите на онлайн-мастер-класс 
-					span.switch-date
-				br
-				p.thanks-text Регистрируйтесь в удобный для вас мессенджер, чтобы получить бонус 
-					span «Ритуал на деньги», 
-					| оставаться на связи и не пропустить мастер-класс
+				include pug/header
+				a.button.button-thanks(href='https://drive.google.com/file/d/1lbwqHfGQbue0qilyQGyzCnO9Qpf5pyqx/view' target="_blank")
+					span Скачать Чек-лист
+				h1.main-title Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и 
+					span не пропустить мастер-класс
 				.bots
 					a.bots-link.bots-link-vk(href="https://bot.mastervision.su/bot/public/link?type=article&soc=vk&id=30", target="_blank")
 						i.fa.fa-vk(aria-hidden="true")
@@ -36,6 +34,8 @@ html(lang="ru")
 					a.bots-link.bots-link-ok(href="https://ok.ru/group/55041781530771/messages", target="_blank")
 						i.fa.fa-odnoklassniki(aria-hidden="true")
 						| Одноклассники
+				h2.main-subtitle Обязательно приходите на онлайн-мастер-класс 
+					span.switch-date
 		include pug/bonus/3.footer.pug
 		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 		script(src="../js/thanks.min.js")

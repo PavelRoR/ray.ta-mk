@@ -1,5 +1,5 @@
 -var head_url = 'https://roleva-yurina.mastervision.su/transpersonal-analytics/promo/';
--var head_title = 'Спасибо за регистрацию на онлайн-мастер-класс';
+-var head_title = 'Оставьте свои данные, чтобы получить Чек лист по запуску частной практики:';
 -var styles = '../css/thanks.min.css';
 -var fav_ico = '../favicon.ico'
 -var fav_png = '../favicon.png'
@@ -11,20 +11,23 @@ html(lang="ru")
 		include pug/scripts/head_scripts
 	body
 		include pug/scripts/body_top_scripts
-		include pug/header
 		section#main
 			.container
-				h1.main-title-thanks Обязательно участвуйте в предстоящем онлайн-мастер-классе. В рамках нашего бесплатного онлайн-мастер-класса мы будем проводить 
-					span ценный розыгрыш. Только в формате ОНЛАЙН
-					| , для участников, которые будут присутствовать на вебинаре!
+				include pug/header
+				h1.main-title Оставьте свои данные, чтобы получить 
+					span Чек лист по запуску частной практики 
+					| &nbsp;и для того, чтобы лучше подготовиться к предстоящему мастер-классу
 				.main-container
-					h2.main-container-title Зарегистрируйте свое участие, чтобы Вам гарантированно пришла ссылка на вебинар
+					//- h2.main-container-title Зарегистрируйте свое участие, чтобы Вам гарантированно пришла ссылка на вебинар
 					form(action="https://shop.mastervision.su/?r=personal/newsletter/data/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
 						.inputrow
 							.inputblock
 								input(type="hidden" value="1" name="required_fields[phone_number]")
 								input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
-						button(type="submit").button.button-form Отправить
+						button(type="submit").button.button-form
+							span Зарегистрироваться 
+								br
+								| на презентацию программы!
 						.clearfix
 						p.alert-message
 						.checking

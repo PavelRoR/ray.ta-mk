@@ -1,0 +1,22 @@
+-var head_title = 'Вы записывались на онлайн-мастер-класс по Трансперсональной аналитике';
+-var head_description = 'Скорее проверьте почту, вас ждут домашние задания!';
+-var styles = '../css/bonus.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main.remind
+			.container
+				include pug/header
+				h1.main-title.remind-main-title Вы зарегистрированы на онлайн-мастер-класс 
+					a(href='https://roleva-yurina.mastervision.su/transpersonal-analytics/' target="_blank") по Трансперсональной аналитике
+						i.fa.fa-external-link(aria-hidden="true")
+				h2.main-subtitle.remind-main-subtitle Скорее проверьте почту, вас ждут домашние задания!
+		include pug/bonus/3.footer.pug
+		include pug/scripts/body_bottom_scripts
