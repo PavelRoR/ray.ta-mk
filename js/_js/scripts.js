@@ -8,7 +8,7 @@ $(document).ready(function () {
         var check = $('.check', this),
             email = $('.input-mail', this),
             message = $('.alert-message', this),
-            button = $('.button-form', this);
+            button = $('.button-modal', this);
         //     switch_title = $('.switch-title'),
         //     switch_text = $('.switch-text'),
         //     modal_text = $('.modal-text'),
@@ -39,7 +39,7 @@ $(document).ready(function () {
                 message = $('.alert-message', this),
                 reNone = /.+/,
                 email = $('.input-mail', this),
-                button = $('.button-form', this);
+                button = $('.button-modal ', this);
             if (!email.val().match(reNone)) {
                 email.css({
                     "borderColor": "red",
@@ -67,9 +67,9 @@ $(document).ready(function () {
                 // if (currDate > startDate[1] && currDate < endDate[1]) {
                 //     window.open(rooms[1]);
                 // }
-                button.text('Отправляем...');
+                button.html('<span>Отправляем...</span>');
                 setTimeout(function () {
-                    button.text('Отправлено!');
+                    button.html('<span>Отправлено!</span>');
                 }, 500);
                 return true
             }

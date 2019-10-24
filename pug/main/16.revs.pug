@@ -1,4 +1,23 @@
 section#revs
 	.container
 		h3.general-title.general-title-revs Истории учеников Анны и Вероники
-		p.general-text Отзывы, которых нет...
+		#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
+			.carousel-inner(role="listbox")
+				.item.text-rev-item.active
+					a( href="img/revs/rev-1.png" data-fancybox="revs")
+						img.rev-img( src="img/revs/rev-1.png" alt="Отзыв 1")
+				each n in [2,3,4,5,6,7,8,9,10,11]
+					.item.text-rev-item
+						a( href="img/revs/rev-" + n + ".png" data-fancybox="revs")
+							img.rev-img( src="img/revs/rev-" + n + ".png" alt="Отзыв "+n)
+			//- ol.carousel-indicators.revs_indicators
+			//- 	li.active( data-target="#text_revs" data-slide-to="0")
+			//- 	li( data-target="#text_revs" data-slide-to="1")
+			//- 	li( data-target="#text_revs" data-slide-to="2")
+			//- 	li( data-target="#text_revs" data-slide-to="3")
+			//- 	li( data-target="#text_revs" data-slide-to="4")
+			//- 	li( data-target="#text_revs" data-slide-to="5")
+			.controls
+				a( class="left carousel-control" href="#text-revs" role="button" data-slide="prev") <
+				a( class="right carousel-control" href="#text-revs" role="button" data-slide="next") >
+			.clearfix
